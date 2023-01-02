@@ -4,5 +4,7 @@
 }
 h1{
     margin: 40px 0;
-
+}
+.errorPage img{
+    max-width: 90%;
 }
