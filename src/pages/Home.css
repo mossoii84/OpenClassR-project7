@@ -56,13 +56,22 @@ div .listeProprietes {
     text-decoration: none;
     display: grid;
 } 
+
+.listeProprietes img {
+    height: 70%;
+    width:  100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
 .textListeProprietes{
     display: grid;
-    justify-self: start;
+    position: absolute;
+    /* justify-self: start; */
     align-self: end;
     text-align: left;
     padding: 10px;
-    width: 40%;
+    width: 10%;
     color: white;
 }
 
@@ -71,4 +80,12 @@ div .listeProprietes {
 .shopList {
     display: grid;
     grid-template-columns: 1fr; 
-}}
+}
+.listeProprietes img {
+    height: 70%;
+    width:  100%;
+}
+.textListeProprietes{
+    width: 50%;
+}
+}

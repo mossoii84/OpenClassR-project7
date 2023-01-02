@@ -5,8 +5,9 @@ import { useEffect, useState } from 'react';
 import ListLogement from '../components/ListLogement'
 
 export default function Home() {
-
-  const[allLogement, setAllBd]=useState([]); //заводим переменные
+  const[allLogement, setAllBd]=useState([]); 
+  
+  //заводим переменные
   //сюда предаем наш метод, с перебором бд, так наши данные попали в allLogement
   useEffect(()=>{setAllBd(getAll)}, []) 
   //пустой [] нужен чтобы сказать - запустить useEffect только после 1 рендеринга
