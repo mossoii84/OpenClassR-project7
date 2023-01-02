@@ -23,14 +23,16 @@
    display: grid;
    grid-area: titleCollapsible;
    justify-items:start;
+   color: white;
 }
 .imgUpDown{
     display: grid;
     grid-area: imgUpDown;
     justify-items: end;
 }
-.imgUpDown img{
-    max-width: 25px;
+.tfiIcon {
+    color: white;
+    font-size: 24px;
 }
 .collapsibleBody{
     display: grid;
