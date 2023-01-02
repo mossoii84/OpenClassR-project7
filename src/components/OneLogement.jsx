@@ -16,7 +16,7 @@ export default function OneLogement( props ){
                   <div className="hostnameContanair">
                     <div className="hostName">{props.data.host.name}</div>
                     <div className="hostnameImage">
-                      <img src={clientImage} alt=""></img>
+                      <img src={props.data.host.picture} alt=''/>
                     </div>
                   </div>
     

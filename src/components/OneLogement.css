@@ -60,10 +60,11 @@
   text-align: right;
 }
 .hostnameImage{
-    justify-self:end
+    justify-self:end;
 }
 .hostnameImage img{
     border-radius: 50px;
+    width: 50px;
 }
 .rating{
     grid-area: rating;
