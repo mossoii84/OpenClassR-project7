@@ -3,7 +3,6 @@ import Routers from './routers/Routers'
 import Header from './components/Header'
 import Footer from './components/Footer';
 
-import Slideshow from './components/Slideshow';
 
 function App() {
   return (
@@ -16,13 +15,3 @@ function App() {
 }
 
 export default App;
-
-
-
-{/* <ul>
-{cart.map(({ name, price, amount }, index) => (
-    <div key={`${name}-${index}`}>
-            {name} {price}€ x {amount}
-    </div>
-))}
-</ul> */}
