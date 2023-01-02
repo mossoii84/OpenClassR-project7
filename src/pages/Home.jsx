@@ -34,23 +34,3 @@ export default function Home() {
     </div>
   )
 }
-
-
-
-// return (
-//   <div>
-//     <div
-//       className="imagePrincipaleHome"
-//       style={{ backgroundImage: `url(${firstPageImage})` }}>
-//       <div className="img-overlay"></div>
-//       <h2>Chez vous, partotu et ailleurs</h2>
-//     </div>
-
-//     <div className="shopList">
-//       {getAll.map((log) => (
-//         <AllLogement key={log.id} props={log} />
-//       ))}
-//     </div>
-//   </div>
-// )
-// }
