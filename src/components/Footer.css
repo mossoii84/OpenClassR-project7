@@ -1,0 +1,23 @@
+footer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: black;
+    height: 150px;
+    text-align: center;
+    padding: 25px 0;
+    width: 100%;
+    margin-top: 100px;
+}
+
+footer img{
+  margin-top: 25px;
+  align-content: end;
+  align-self: end;
+
+}
+
+p{
+    font-size: 1em;
+    color: antiquewhite;
+    margin-top: 15px;
+}

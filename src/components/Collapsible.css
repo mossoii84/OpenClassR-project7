@@ -1,0 +1,45 @@
+.containerCollapsible{
+    display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+          grid-template-areas: "collapsible collapsible collapsible"
+                               "collapsibleBody collapsibleBody collapsibleBody";
+          background-color: rgba(211, 211, 211, 0.514);
+          border-radius: 10px;
+
+    /* border: 1px solid red; */
+    margin: 30px auto;
+    width: 80%;
+}
+.collapsible{
+    grid-area: collapsible;
+    display: grid;
+    background-color: rgb(207, 87, 87);
+    grid-template-areas: "titleCollapsible . imgUpDown";
+    border-radius: 4px;
+    padding: 5px 15px;
+}
+
+.titleCollapsible{
+   display: grid;
+   grid-area: titleCollapsible;
+   justify-items:start;
+}
+.imgUpDown{
+    display: grid;
+    grid-area: imgUpDown;
+    justify-items: end;
+}
+.imgUpDown img{
+    max-width: 25px;
+}
+.collapsibleBody{
+    display: grid;
+    grid-area: collapsibleBody;
+    grid-template-columns:  1fr;
+    background-color: rgb(226, 226, 226);
+    border-radius: 4px;
+    padding: 15px;
+}
+
+
+

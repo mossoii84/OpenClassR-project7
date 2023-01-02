@@ -1,0 +1,47 @@
+nav{
+    display: grid;
+    grid-template-areas: "navLeft navRight";
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    /* border: 1px solid green; */
+    }
+.logo_header img{
+      max-width: 50%;
+    }
+
+.navLeft{
+      grid-area: navLeft;
+   } 
+    /* right   */
+.navRight {
+      grid-area:navRight ;
+        display: grid;
+        justify-items: end;
+        grid-template-areas: "linkHome linkPropos";
+        font-size: calc(4px + 2vmin);
+        color: rgb(243, 43, 43) !important;
+        justify-content: end;
+    }
+    .navRight a{
+        /* убрали подчеркивание */
+         text-decoration:none;
+         /* убрали цвет при переходной ссылке */
+         color: inherit; 
+    }
+  
+  .linkHome{
+      grid-area: linkHome;
+  }
+  
+  .linkPropos{
+      grid-area: linkPropos;
+      padding-left: 20px;
+  
+  }
+  
+     /* убрали цвет при переходной ссылке */
+    /* a, a:visited, a:hover, a:active {
+        color: inherit;
+      } */
+  

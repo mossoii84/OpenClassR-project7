@@ -1,0 +1,52 @@
+.slider {
+position: relative;
+margin: 20px 0 40px 0;
+/* border: 1px solid red; */
+display: grid;
+grid-template-areas: "arrowPrevious slide arrowNext";
+grid-template-columns: 1% 94% 1%;
+align-items: center;
+justify-content: space-between;
+}
+
+.imageSlider{
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+.slide{
+  grid-area: slide;
+  opacity: 0;
+  transition-duration:  1s ease; 
+}
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+
+.arrowPrevious{
+  cursor: pointer;
+  position: absolute;
+  left:25px;
+  z-index: 1;
+  font-size: 36px;
+}
+.arrowNext  {
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  z-index: 1;
+  font-size: 36px;
+}
+
+
+
+
+/* for mobile  */
+@media (max-width: 460px) {
+  .imageSlider{
+    height: 200px;
+  }
+}

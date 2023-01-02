@@ -1,0 +1,33 @@
+/* my code */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+}
+img{
+  object-fit:cover;
+}
+
+/* //// */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+    /* moi */
+    margin: 0 auto;
+    justify-content: center;
+    width: 80%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
