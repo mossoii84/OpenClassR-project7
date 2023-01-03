@@ -8,7 +8,7 @@ export default function OneLogement( props ){
     
                   <div className="tagsList">
                     {props.data.tags.map(res => (
-                      <div className="tags">{res}</div>
+                      <div className="tags" key={res}>{res}</div>
                     ))}
                   </div>
     

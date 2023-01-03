@@ -15,8 +15,6 @@ import {
 export const Slideshow = ({ children }) => {
   const [position, setPosition] = useState(0)
 
-
-  console.log(children.length)
   // children.length = всегда равен 3 хоть я +1 хоть -1
   // логика в том что наша фотка которая виднеется всегда possiton=0 *??
   // click a button
