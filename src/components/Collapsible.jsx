@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import './Collapsible.css'
-// import  arrowUp from '../assets/arrow-up.webp'
-// import  arrowDown from '../assets/arrow-down.webp'
 
 import {
   TfiAngleUp,

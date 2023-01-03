@@ -1,4 +1,3 @@
-import clientImage from '../assets/client.jpg'
 import './OneLogement.css'
 
 export default function OneLogement( props ){

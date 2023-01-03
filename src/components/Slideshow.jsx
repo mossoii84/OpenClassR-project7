@@ -1,4 +1,3 @@
-// import ImageSlide from './'
 import { useState } from 'react'
 import './Slideshow.css'
 
@@ -6,14 +5,18 @@ import './Slideshow.css'
 // https://react-icons.github.io/react-icons/search?q=arrow
 
 import {
-  BsFillArrowLeftCircleFill,
-  BsFillArrowRightCircleFill,
-} from 'react-icons/bs'
+  MdOutlineArrowBackIosNew,
+  MdOutlineArrowForwardIos,
+} from "react-icons/md";
 
-//children(имеено такое слово) - это те елементы которые  находятся в <Slideshow><div 1,2,3</div>
+
+
+//children(сами задали, но есть и спец слово если бы были там встроенные <div>) - это те елементы которые находятся в <Slideshow><div 1,2,3</div>
 export const Slideshow = ({ children }) => {
   const [position, setPosition] = useState(0)
 
+
+  console.log(children.length)
   // children.length = всегда равен 3 хоть я +1 хоть -1
   // логика в том что наша фотка которая виднеется всегда possiton=0 *??
   // click a button
@@ -24,24 +27,35 @@ export const Slideshow = ({ children }) => {
     setPosition(position === children.length - 1 ? 0 : position + 1)
   }
 
-  return (
-    <section className="slider">
-      <div className="arrowPrevious" ><BsFillArrowLeftCircleFill onClick={previous} /></div> 
 
-      {children.map((slide, index) => {
-        return (
-          <div
-            className={index === position ? 'slide active' : 'slide'}
-            key={index}
-          >
-            {index === position && (
-              <img src={slide} alt="" className="imageSlider" />
-            )}
+return (
+  <section className="slider">
+
+    {children.map((slide, index) => {
+      return (
+        <div
+          className={index === position ? 'slide active' : 'slide'}
+          key={index}
+        >
+              {/* for button */}
+        { children.length > 1 && ( 
+          <div>
+          <div className="arrowPrevious" ><MdOutlineArrowBackIosNew onClick={previous} /></div> 
+          <div  className="arrowNext" ><MdOutlineArrowForwardIos onClick={next}/></div>
           </div>
-        )
-      })}
+          )} 
+ 
 
-      <div  className="arrowNext" ><BsFillArrowRightCircleFill onClick={next}/></div>
-    </section>
-  )
+          {index === position && (
+            <img src={slide} alt="" className="imageSlider" />
+          )}
+        </div>
+      )
+    })}
+
+    {/* <div  className="arrowNext" ><BsFillArrowRightCircleFill onClick={next}/></div> */}
+  </section>
+)
+
+
 }

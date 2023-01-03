@@ -8,8 +8,6 @@ import { Slideshow } from '../components/Slideshow'
 
 export default function Logement() {
   const { id } = useParams()
-  // const [oneLogement, setOneLogement] = useState({})
-  // useEffect(()=>{setOneLogement(getOne(id))})
   const oneLogement = getOne(id)
 
   if (!oneLogement) {

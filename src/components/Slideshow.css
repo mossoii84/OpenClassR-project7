@@ -30,15 +30,19 @@ justify-content: space-between;
   cursor: pointer;
   position: absolute;
   left:25px;
+  top:40%;
   z-index: 1;
-  font-size: 36px;
+  font-size: 38px;
+  color: white;
 }
 .arrowNext  {
   cursor: pointer;
   position: absolute;
+  top:40%;
   right: 25px;
   z-index: 1;
-  font-size: 36px;
+  font-size: 38px;
+  color: white;
 }
 
 
