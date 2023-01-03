@@ -19,18 +19,6 @@ export default function Apropos() {
 
 
 
-
-
-{/* <div className='imagePrincipaleAporose'>
-<img
-  srcSet={`${collapsiblePageImage} 320w, ${collapsiblePageImage} 680w, 
-  ${collapsiblePageImage} 960w, ${collapsiblePageImage} 1980w`}
-  src={collapsiblePageImage}
-  alt=""
-/></div> */}
-
-
-
     <Collapsible label="Fiabilité">
         The collapsible component puts long sections of the information under a
         block enabling users to expand or collapse to access its details.

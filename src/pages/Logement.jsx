@@ -21,7 +21,7 @@ export default function Logement() {
   return (
     <div>
       <Slideshow children={oneLogement.pictures}  />
-
+      
       <OneLogement  data={oneLogement} />
 
       <div className="collapsibleForLogement">
@@ -32,8 +32,8 @@ export default function Logement() {
         </div>
         <div>
           <Collapsible className="rightCollapsible">
-            {oneLogement.equipments.map((res) => (
-              <ul key={res}>
+            {oneLogement.equipments.map((res, index) => (
+              <ul key={index}>
                 <li>{res}</li>
               </ul>
             ))}
