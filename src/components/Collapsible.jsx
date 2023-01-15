@@ -22,6 +22,7 @@ export default function Collapsible(props) {
         </div>
       </div>
       {open && <div className="collapsibleBody">{props.children}</div>}
+      {/* if true faire -&&, else no faire -&&. */}
     </div>
   )
 }

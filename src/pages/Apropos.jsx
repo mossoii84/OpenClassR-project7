@@ -3,12 +3,7 @@ import './Apropos.css';
 import collapsiblePageImage from '../assets/images/imageApropose.jpg'
 import Collapsible from '../components/Collapsible';
 
-// https://blog.openreplay.com/creating-a-collapsible-component-for-react/
-// https://metanit.com/web/react/2.5.php
 
-
-
-// это то что будет отоброжаться
 export default function Apropos() {
         return (
             <div>

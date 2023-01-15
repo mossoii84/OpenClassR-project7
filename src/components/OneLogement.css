@@ -77,7 +77,7 @@
 .rating1::before{
   content: "★";
 }
-.rating1::before{
+.rating1::after{
   content: "★★★★";
   color: gray;
 }
