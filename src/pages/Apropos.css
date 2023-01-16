@@ -12,7 +12,24 @@
     object-fit: cover;
     background-repeat: no-repeat;
 }
-/* .imagePrincipaleAporose img{
-    width: 100%;
-    border-radius: 10px;
-} */
+
+.Apropose__Сollapsible {
+    margin: 30px auto;
+    width: 90%;
+    font-size: 24px !important;
+}
+.Apropose__Сollapsible__Text{
+    color: #FF6060;
+
+}
+@media (max-width: 460px) {
+    .Apropose__Сollapsible{
+        width: 100%;
+        font-size: 13px;
+    }
+    .Apropose__Сollapsible__Text{
+        color: #FF6060;
+        font-size: 12px;
+
+    }
+}

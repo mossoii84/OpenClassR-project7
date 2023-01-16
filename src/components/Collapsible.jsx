@@ -10,8 +10,8 @@ export default function Collapsible(props) {
   }
 
   return (
-    <div onClick={toggle} className="containerCollapsible">
-      <div className="collapsible">
+    <div  className="containerCollapsible">
+      <div className="collapsible" onClick={toggle}>
         <div className="titleCollapsible">{props.label}</div>
         <div className="imgUpDown">
           {open ? (

@@ -1,10 +1,49 @@
 .errorPage{
     margin: 40px 0 100px 0;
     text-align: center;
+    margin-bottom: 220px;
 }
+
 h1{
+font-weight: 700;
+color: #FF6060;
+font-size: 288px;
+}
+
+h2{
+    font-weight: 500;
+    color: #FF6060;
+    font-size: 36px;
+}
+h5{
     margin: 40px 0;
+    font-weight: 500;
+    color: #FF6060;
+    font-size: 18px;
+    text-decoration-line: underline;
 }
 .errorPage img{
     max-width: 90%;
+}
+
+@media (max-width: 460px) {
+   h1{
+    font-size: 96px;
+    }
+    h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    .oups {
+        display: flex;
+        flex-direction: column;
+    }
+    .vous{
+        display: flex;
+        flex-direction: column;
+     }
+    h5{
+        font-size: 14px;
+    }
+
 }

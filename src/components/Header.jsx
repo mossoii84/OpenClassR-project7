@@ -21,7 +21,7 @@ export default function Header() {
               className="linkHome"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
-              Home
+              Accueil
             </NavLink>
           </div>
 

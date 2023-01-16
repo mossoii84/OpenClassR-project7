@@ -20,23 +20,27 @@ export default function Logement() {
 
   return (
     <div>
-      <Slideshow children={oneLogement.pictures}  />
+      <Slideshow children={oneLogement.pictures} />
       
       <OneLogement  data={oneLogement} />
 
       <div className="collapsibleForLogement">
         <div>
-          <Collapsible className="leftCollapsible">
+          <Collapsible label="Description" >
+            <span className='spanCollapsibleForLogement'>
             {oneLogement.description}
+            </span>
           </Collapsible>
         </div>
         <div>
-          <Collapsible className="rightCollapsible">
+          <Collapsible label="Equipments">
+          <span className='spanCollapsibleForLogement'>
             {oneLogement.equipments.map((res, index) => (
               <ul key={index}>
                 <li>{res}</li>
               </ul>
             ))}
+            </span>
           </Collapsible>
         </div>
       </div>

@@ -3,8 +3,8 @@ position: relative;
 margin: 20px 0 40px 0;
 /* border: 1px solid red; */
 display: grid;
-grid-template-areas: "arrowPrevious slide arrowNext";
-grid-template-columns: 1% 94% 1%;
+grid-template-areas: "slide";
+grid-template-columns: 100% ;
 align-items: center;
 justify-content: space-between;
 }
@@ -22,7 +22,7 @@ justify-content: space-between;
 .slide.active {
   opacity: 1;
   transition-duration: 1s;
-  transform: scale(1.08);
+  transform: scale(1.0);
 }
 
 
@@ -45,7 +45,13 @@ justify-content: space-between;
   color: white;
 }
 
-
+.indexCounter{
+  position: absolute;
+  left: 49%;
+  top: 86%;
+  color: white;
+  font-size: 18px;
+}
 
 
 /* for mobile  */
@@ -53,4 +59,8 @@ justify-content: space-between;
   .imageSlider{
     height: 200px;
   }
+  .indexCounter{
+    display: none;
+  }
+  
 }

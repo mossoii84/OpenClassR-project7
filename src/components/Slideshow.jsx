@@ -27,7 +27,7 @@ export const Slideshow = ({ children }) => {
             className={index === position ? 'slide active' : 'slide'}
             key={index}
           >
-            {/* for button */}
+            {/* for button, if 1 image no need button */}
             {children.length > 1 && (
               <div>
                 <div className="arrowPrevious">
@@ -42,6 +42,8 @@ export const Slideshow = ({ children }) => {
             {index === position && (
               <img src={slide} alt="" className="imageSlider" />
             )}
+
+            <span className='indexCounter'>{index+1}/{children.length}</span>
           </div>
         )
       })}

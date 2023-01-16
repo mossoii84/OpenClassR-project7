@@ -3,24 +3,23 @@
           grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
           grid-template-areas: "collapsible collapsible collapsible"
                                "collapsibleBody collapsibleBody collapsibleBody";
-          background-color: rgba(211, 211, 211, 0.514);
-          border-radius: 10px;
-    margin: 30px auto;
-    width: 80%;
+    border-radius: 10px;
+    padding: 15px 0;
+    align-items: center;
 }
 .collapsible{
     grid-area: collapsible;
     display: grid;
-    background-color: rgb(207, 87, 87);
+    background-color: #FF6060;
     grid-template-areas: "titleCollapsible . imgUpDown";
     border-radius: 4px;
-    padding: 5px 15px;
+    padding: 5px 15px;  
 }
-
 .titleCollapsible{
    display: grid;
    grid-area: titleCollapsible;
    justify-items:start;
+   align-items: center;
    color: white;
 }
 .imgUpDown{
@@ -36,10 +35,23 @@
     display: grid;
     grid-area: collapsibleBody;
     grid-template-columns:  1fr;
-    background-color: rgb(226, 226, 226);
+    background-color: #F7F7F7;
     border-radius: 4px;
     padding: 15px;
 }
 
+
+
+@media (max-width: 460px) {
+    .Apropose__Сollapsible{
+        width: 100%;
+        font-size: 13px;
+    }
+    .Apropose__Сollapsible__Text{
+        color: #FF6060;
+        font-size: 12px;
+
+    }
+}
 
 

@@ -19,8 +19,9 @@ nav{
         display: grid;
         justify-items: end;
         grid-template-areas: "linkHome linkPropos";
-        font-size: calc(4px + 2vmin);
-        color: rgb(243, 43, 43) !important;
+        /* font-size: calc(4px + 2vmin); */
+        font-size: 24px;
+        color: #FF6060 !important;
         justify-content: end;
     }
     .navRight a{
@@ -40,8 +41,10 @@ nav{
   
   }
   
-     /* убрали цвет при переходной ссылке */
-    /* a, a:visited, a:hover, a:active {
-        color: inherit;
-      } */
-  
+  @media (max-width: 460px) {
+    .navRight {
+          font-size: 12px;
+
+      }
+
+}
