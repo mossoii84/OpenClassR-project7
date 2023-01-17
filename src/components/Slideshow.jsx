@@ -22,6 +22,7 @@ export const Slideshow = ({ children }) => {
   return (
     <section className="slider">
       {children.map((slide, index) => {
+          console.log()
         return (
           <div
             className={index === position ? 'slide active' : 'slide'}

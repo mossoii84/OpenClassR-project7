@@ -13,6 +13,7 @@ export default function Collapsible(props) {
     <div  className="containerCollapsible">
       <div className="collapsible" onClick={toggle}>
         <div className="titleCollapsible">{props.label}</div>
+
         <div className="imgUpDown">
           {open ? (
             <TfiAngleUp className="tfiIcon" />
@@ -21,6 +22,7 @@ export default function Collapsible(props) {
           )}
         </div>
       </div>
+       {/* this is a > props.children < - special method between tags */}
       {open && <div className="collapsibleBody">{props.children}</div>}
       {/* if true faire -&&, else no faire -&&. */}
     </div>
